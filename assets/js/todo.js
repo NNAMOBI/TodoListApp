@@ -44,8 +44,14 @@ $('ul').on('click', 'li', function(){ // we put an on click event ,and a third a
             let inputText = $(this).val();
 
             //append the li tag and the variable inputText to the parent element(ul)
-            $('ul').append(`<li><span>X</span> ${inputText} </li>`)
+            $('ul').append(`<li><span><i class="fa fa-trash"></i></span> ${inputText} </li>`)
+            event.stopPropagation()
         }
 
+    })
+
+    $('.fa-plus').on('click', function(){
+        // alert('you clicked me')
+        $('input[type="text"]').fadeToggle()
     })
     
