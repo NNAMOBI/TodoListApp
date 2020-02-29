@@ -1,16 +1,67 @@
 body {
-  background: teal;
+  /* background: teal; */
+  font-family: Roboto;
+}
+
+/*  */
+h1 {
+    background: #2980b9;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 10px 20px;  /* 10px is for top and bottom while 20px is for left and right*/
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    background: #ffffff;
+    height: 40px;
+    line-height: 40px; /* line-height takes us the whole area of the height just like it centers it */
+    color: gray;
+}
+
+li:nth-child(2n){
+    background: #f7f7f7;
+}
+
+input[type="text"]{
+   background-color: #f7f7f7; 
+   border: none;
+   font-size: 18px;
+   width: 100%;
+   padding: 13px 13px 13px 20px;
+   box-sizing: border-box;
+   color: #2980b9;
+}
+
+input:focus {
+    border: 2px solid #2980b9;
+    background-color: white;
+}
+
+input:hover {
+    border: 2px solid #2980b9;
+    background-color: white;
 }
 
 #container {
-    background: gray;
+    background: #f7f7f7;
     width: 360px;
-    margin: 0 auto;
-    border: 2px solid black;
+    margin: 150px auto;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .completed {
     text-decoration: line-through;
     color: blue;
-    
+
 }
