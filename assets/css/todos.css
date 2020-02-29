@@ -1,0 +1,16 @@
+body {
+  background: teal;
+}
+
+#container {
+    background: gray;
+    width: 360px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: blue;
+    
+}
